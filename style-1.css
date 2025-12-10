@@ -1,19 +1,19 @@
-
-body, html {
+/* styles.css */
+html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
-    overflow-x: hidden;
 }
 
 body {
-    background-image: url('Porsche.png');
+    background-image: url('votre_image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -21,13 +21,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    position: relative;
-    z-index: 100;
     background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
 }
 
 .logo h1 {
-    color: #070707;
+    color: #0c0b0b;
     font-size: 24px;
     font-weight: bold;
     margin: 0;
@@ -43,19 +42,20 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #050404;
+    color: #140a0a;
     font-weight: bold;
 }
 
 .contact-btn {
-    background-color: #0e0a0a;
+    background-color: #040303;
     color: white !important;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
 main {
-    height: calc(100vh - 120px); /* Ajustement pour l'en-tête et le pied de page */
+    flex: 1;
+    padding: 20px;
 }
 
 footer {
@@ -64,6 +64,4 @@ footer {
     text-align: left;
     font-size: 12px;
     color: #666;
-    position: relative;
-    z-index: 100;
 }
